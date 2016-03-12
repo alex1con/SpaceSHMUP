@@ -1,4 +1,4 @@
-﻿/*using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 // Part is another serializable data storage class just like WeaponDefinition
 [System.Serializable]
@@ -85,7 +85,7 @@ public class Enemy_4 : Enemy {
 			// This stops the player from shooting them before they are visible
 			bounds.center = transform.position + boundsCenterOffset;
 			if (bounds.extents == Vector3.zero || Utils.ScreenBoundsCheck(bounds,
-				➥BoundsTest.offScreen) != Vector3.zero) {
+				BoundsTest.offScreen) != Vector3.zero) {
 				Destroy(other);
 				break;
 			}
@@ -186,4 +186,3 @@ public class Enemy_4 : Enemy {
 		remainingDamageFrames = showDamageForFrames;
 	}
 }
-*/

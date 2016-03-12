@@ -47,7 +47,7 @@ public class Weapon : MonoBehaviour {
 
 	void Start() {
 		// Call SetType() properly for the default _type
-		/*SetType( _type );
+		SetType( _type );
 		if (PROJECTILE_ANCHOR == null) {
 			GameObject go = new GameObject("_Projectile_Anchor");
 			PROJECTILE_ANCHOR = go.transform;
@@ -56,7 +56,7 @@ public class Weapon : MonoBehaviour {
 		GameObject parentGO = transform.parent.gameObject;
 		if (parentGO.tag == "Hero") {
 			Hero.S.fireDelegate += Fire;
-		}*/
+		}
 	}
 
 	public WeaponType type {

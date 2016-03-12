@@ -12,12 +12,12 @@ public class Main : MonoBehaviour {
 	public WeaponDefinition[] weaponDefinitions;
 
 	public GameObject prefabPowerUp;
-
 	public WeaponType[] powerUpFrequency = new WeaponType[] {
-		WeaponType.blaster, WeaponType.blaster,
+		WeaponType.blaster,
+		WeaponType.blaster,
 		WeaponType.spread,
-		WeaponType.shield } ;
-
+		WeaponType.shield
+	};
 	public bool ________________;
 
 	public WeaponType[] activeWeaponTypes;
@@ -84,7 +84,7 @@ public class Main : MonoBehaviour {
 		SceneManager.LoadScene("_Scene_0");
 	}
 
-	/*public void ShipDestroyed( Enemy e ) {
+	public void ShipDestroyed( Enemy e ) {
 		// Potentially generate a PowerUp
 		if (Random.value <= e.powerUpDropChance) {
 			// Random.value generates a value between 0 & 1 (though never == 1)
@@ -106,5 +106,5 @@ public class Main : MonoBehaviour {
 			pu.transform.position = e.transform.position;
 		}
 	}
-*/
+
 }
